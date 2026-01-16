@@ -8,4 +8,5 @@ for i in range(len(arr)):
             index = j 
 
             arr[i], arr[index]= arr[index] , arr[i] 
-print(arr)     
+print(arr)   
+#this is selection sort  
