@@ -1,15 +1,13 @@
+arr = [2, 5, 6, 4, 7, 3]
 
-arr =[2,5,6,4,7,3]
-
-def find(value):
-    a = False
-    target  = value
-    for i in range(0,len(arr)):
+def find_index(arr, target):
+    i = 0
+    n = len(arr)
+    while i < n:
         if arr[i] == target:
-            a = True
-            print(i)
-    if a == False:
-        print("there is not such value")
+            return i
+        i += 1
+    return -1
 
-value = int(input("enter the value whose index you want "))
-find(value)
+a = int(input("Enter a target: "))
+print(find_index(arr, a))
